@@ -1,7 +1,12 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    unoptimized: true,
+  },
+  // Добавляем настройки для Netlify
+  target: 'serverless',
+}
 
-
-// next.config.js
-module.exports = {
-  output: 'export', // указание на экспорт статического сайта
-  // другие настройки (если есть)
-};
+module.exports = nextConfig
