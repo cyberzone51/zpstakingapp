@@ -5,8 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Добавляем настройки для Netlify
-  target: 'serverless',
 }
 
 module.exports = nextConfig
