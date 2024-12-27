@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  images: {
+    domains: ['ipfs.thirdweb.com', 'gateway.ipfscdn.io'],
+  },
 }
 
 module.exports = nextConfig
