@@ -2,6 +2,7 @@
   "name": "erc721stakingtest",
   "version": "0.1.0",
   "private": true,
+  "description": "NFT Staking Project",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",

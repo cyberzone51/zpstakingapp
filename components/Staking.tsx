@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { claimTo, getNFTs, ownerOf, totalSupply } from "thirdweb/extensions/erc721";
 import { NFTCard } from "./NFTCard";
 import { StakedNFTCard } from "./StakedNFTCard";
+import { useContract, useNFTs, useAddress } from "@thirdweb-dev/react";
 
 export const Staking = () => {
     const account = useActiveAccount();

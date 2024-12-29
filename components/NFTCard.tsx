@@ -1,9 +1,8 @@
 import { client } from "@/app/client";
-import { NFT, prepareContractCall } from "thirdweb";
-import { MediaRenderer, TransactionButton } from "thirdweb/react";
+import { NFT } from "@thirdweb-dev/sdk";
+import { MediaRenderer, Web3Button } from "@thirdweb-dev/react";
 import { NFT_CONTRACT, STAKING_CONTRACT } from "../utils/contracts";
 import { useState } from "react";
-import { approve } from "thirdweb/extensions/erc721";
 
 type OwnedNFTsProps = {
     nft: NFT;
