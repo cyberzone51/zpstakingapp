@@ -73,6 +73,52 @@
   }
 }
 
+@font-face {
+  font-family: 'Creepster';
+  src: url("/fonts/creepster-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.creepster-regular {
+  font-family: 'Creepster', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes scaryAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slimeDrop {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+
+.slime {
+  color: green;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5);
+  animation: slimeDrop 0.5s infinite alternate;
+}
+
+.blood {
+  color: red;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes bloodDrop {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+
+.blood-drop {
+  color: red;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.5);
+  animation: bloodDrop 0.5s infinite alternate;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

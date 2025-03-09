@@ -15,7 +15,7 @@ export const StakeRewards = () => {
         balanceOf,
         {
             contract: REWARD_TOKEN_CONTRACT,
-            owner: account?.address || "",
+            owner: account?.address || "0xa059ea464C5E671d354Ca3F55Fe076CCb7d414d5",
         }
     )
     
@@ -25,7 +25,7 @@ export const StakeRewards = () => {
     } = useReadContract({
         contract: STAKING_CONTRACT,
         method: "getStakeInfo",
-        params: [account?.address || ""],
+        params: [account?.address || "0x9df0aE1197192e9f5d80DED870B287DB2e32c880"],
     });
 
     useEffect(() => {

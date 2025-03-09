@@ -23,5 +23,9 @@ export const STAKING_CONTRACT = getContract({
     client: client,
     chain: chain,
     address: stakingContractAddress,
-    abi: stakingABI
+    abi: stakingABI // Проверьте, что в ABI есть все нужные методы:
+    // - stake
+    // - withdraw
+    // - getStakingRewards
+    // - claimRewards
 });

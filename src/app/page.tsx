@@ -12,7 +12,12 @@ export default function Home() {
       margin: "20px auto",
       width: "500px",
     }}>
-      <h1>Pixel Pandemic Staking NFT</h1>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <img src="/logo.gif" alt="Логотип" style={{ width: "50px", height: "auto", marginRight: "10px" }} />
+        <h1 style={{ margin: 0, flexGrow: 1, textAlign: "center", fontFamily: "Creepster" }}>
+          Zombie Punks Staking App
+        </h1>
+      </div>
       <ConnectEmbed
         client={client}
         chain={chain}

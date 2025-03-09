@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NFT Staking App",
-  description: "Stake NFT get rewards ($PIX) Coin",
+  description: "Stake NFT get rewards ($ZOME) Coin",
 };
 
 export default function RootLayout({

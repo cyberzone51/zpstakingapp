@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 import { claimTo, getNFTs, ownerOf, totalSupply } from "thirdweb/extensions/erc721";
 import { NFTCard } from "./NFTCard";
 import { StakedNFTCard } from "./StakedNFTCard";
-import { useContract, useNFTs, useAddress } from "@thirdweb-dev/react";
 
 export const Staking = () => {
     const account = useActiveAccount();
@@ -25,7 +24,7 @@ export const Staking = () => {
         });
         const nfts = await getNFTs({
             contract: NFT_CONTRACT,
-            start: 0,
+            start: 15,
             count: parseInt(totalNFTSupply.toString()),
         });
         
@@ -53,7 +52,7 @@ export const Staking = () => {
     } = useReadContract({
         contract: STAKING_CONTRACT,
         method: "getStakeInfo",
-        params: [account?.address || ""],
+        params: [account?.address || "0x9df0aE1197192e9f5d80DED870B287DB2e32c880"],
     });
     
     if(account) {
