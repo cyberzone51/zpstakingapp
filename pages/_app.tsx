@@ -1,6 +1,7 @@
 import { ThirdwebProvider } from "@thirdweb-dev/react";
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider 
       clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
